@@ -42,20 +42,16 @@ body {
 </head>
 <body>
 
-<audio id="myAudio" src="300.mp3" preload="auto"></audio> <!-- Updated audio file -->
-
 <div class="logo-container">
   <img class="logo" src="conquer_logo2.png" alt="Conquer"> <!-- Logo filename -->
 </div>
 
 <img class="image" src="conquer.jpg" alt="Conquer">
 
-<script>
-// Play audio as soon as the website is loaded
-document.addEventListener('DOMContentLoaded', function() {
-  document.getElementById('myAudio').play();
-});
+<!-- SoundCloud Player -->
+<iframe width="0" height="0" scrolling="no" frameborder="no" allow="autoplay" style="display:none;" src="https://on.soundcloud.com/vpH5B"></iframe>
 
+<script>
 // After 2 seconds, display the logo
 setTimeout(function() {
   document.querySelector('.logo-container').style.display = 'block';
