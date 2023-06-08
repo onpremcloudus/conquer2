@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #000000; /* Black background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+@keyframes pulse {
+  0%   {opacity: 1;}
+  50%  {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+
+.logo-container {
+  width: 50%;  /* Smaller size */
+  display: none; /* Hide the logo initially */
+  position: relative;
+}
+
+.logo {
+  animation: pulse 1s infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.image {
+  display: none; /* Hide the image initially */
+}
+</style>
+</head>
+<body>
+
+<div class="logo-container">
+  <img class="logo" src="conquer_2.png" alt="Conquer"> <!-- New logo -->
+</div>
+
+<img class="image" src="conquer.jpg" alt="Conquer">
+
+<script>
+// After 2 seconds, display the logo
+setTimeout(function() {
+  document.querySelector('.logo-container').style.display = 'block';
+}, 2000);
+
+// After 5 seconds, display the image
+setTimeout(function() {
+  document.querySelector('.image').style.display = 'block';
+}, 5000);
+</script>
+
+</body>
+</html>
