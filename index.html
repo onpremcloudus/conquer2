@@ -5,14 +5,32 @@
         <style>
             h1 {
                 font-size: 2em; 
-                color: red;
+                color: #F38020;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .images {
+                position: absolute;
+                top: 70%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            audio {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 0);
             }
         </style>
     </head>
     <body>
         <h1>Welcome to my Website</h1>
-        <img src="ihg.jpg" alt="Website Logo">
-        <img src="conquer.jpg" alt="Second Image">
+        <div class="images">
+            <img src="ihg.jpg" alt="Website Logo">
+            <img src="conquer.jpg" alt="Second Image">
+        </div>
         <audio src="300.mp3" autoplay controls>
             Your browser does not support the audio element.
         </audio>
